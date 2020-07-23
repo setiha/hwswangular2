@@ -1,0 +1,16 @@
+<div><input [value] = "text" (keyup)="textChanged($event)"></div>{{text}}
+<div><input [ngModel] = "internalText" (ngModelChange) = "internalText = $event"></div>
+{{internalText}}
+<br>
+<br>
+<br>
+
+<div><input [(ngModel)] = "internalText"></div>
+{{internalText}}
+<div><select [(ngModel)] = 'selected'>
+  <option value="A">A</option>
+  <option value="B">B</option>
+  <option value="C">C</option>
+</select>
+{{selected}}
+</div>

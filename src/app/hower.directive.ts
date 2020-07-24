@@ -1,7 +1,7 @@
 import {Directive, ElementRef, HostListener, Input} from '@angular/core';
 
 @Directive({
-  selector: 'div'
+  selector: '[appHower]'
 })
 export class HowerDirective {
   @Input('appHower') color = 'blue';

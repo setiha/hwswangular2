@@ -1,6 +1,6 @@
 <app-input [text] = "title" (textChange)="title = $event"></app-input>
 <div>test div</div>
-<div *ngFor="let fruit of fruits" [ngClass] ="getClassForFruit(fruit)" [class.dark-bg]="fruit.color === 'yellow'" [ngStyle] = "{color: fruit.color}">
+<div *ngFor="let fruit of fruits" [ngStyle] = "{color: fruit.color}" [ngClass] ="getClassForFruit(fruit)" [class.dark-bg]="fruit.color === 'yellow'">
   {{fruit.name}}-{{fruit.score}}
   <div *ngIf="fruit.score >= 6; else elseContent">
     I like {{fruit.name}}-{{fruit.score}}

@@ -9,7 +9,7 @@ export class InputComponent implements OnInit {
   @Input() text: string;
   @Output() textChange = new EventEmitter<string>();
    internalText: string = 'Angular';
-selected = 'C'
+selected = 'C';
   constructor() {
   }
 

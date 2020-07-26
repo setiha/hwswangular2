@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { InputComponent } from './input/input.component';
 import {FormsModule} from "@angular/forms";
 import { HowerDirective } from './hower.directive';
+import { HeartPipe } from './heart.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     InputComponent,
-    HowerDirective
+    HowerDirective,
+    HeartPipe
   ],
   imports: [
     BrowserModule,

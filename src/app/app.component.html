@@ -3,9 +3,9 @@
 <div *ngFor="let fruit of fruits" [ngStyle] = "{color: fruit.color}" [ngClass] ="getClassForFruit(fruit)" [class.dark-bg]="fruit.color === 'yellow'" appHower="">
   {{fruit.name}}-{{fruit.score}}
   <div *ngIf="fruit.score >= 6; else elseContent">
-    I like {{fruit.name}}-{{fruit.score}}
+    I like {{fruit | heart}}-{{fruit.score}}
   </div>
-  <ng-template #elseContent>I don't {{fruit.name}}-{{fruit.score}}</ng-template>
+  <ng-template #elseContent>I don't {{fruit | heart:true}}-{{fruit.score}}</ng-template>
 </div>
 <div>
   Uppercase pipe
